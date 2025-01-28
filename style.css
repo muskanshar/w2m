@@ -423,144 +423,7 @@ body, ul, li, a {
     font-weight: bold;
     color: #624b35;
   }
-  
-
-
-
-/* about us */
-
-/* .outing {
-    margin: 0px 200px 0px 200px;
-}
-
-.box {
-    display: flex;
-}
-
-.box1 {
-    background-color: #219C90;
-    width: 100%;
-    animation-name: change_width;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    display: flex;
-    z-index: 1;
-}
-
-@keyframes change_width {
-    from {
-        width: 1000px;
-    }
-    to {
-        width: 550px;
-    }
-}
-
-.box2 {
-    padding: 25px;
-    background: url("/About.jpeg")no-repeat center center/cover;
-    animation-name: opacity_image;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    opacity: 0.4;
-    animation-fill-mode: forwards;
-}
-
-@keyframes opacity_image {
-    from {
-        opacity: 0.5;
-        width: 0px;
-    }
-    to {
-        opacity: 1;
-        width: 550px;
-    }
-}
-
-.content {
-    padding: 25px;
-    width: 550px;
-    color: white;
-    animation-name: text;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    line-height: 0px;
-}
-
-@keyframes text {
-    from {
-        line-height: 0px;
-    }
-    to {
-        line-height: 20px;
-    }
-}
-
-.content h1 {
-    display: flex;
-    justify-content: center;
-}
-
-.content p {
-    padding: 20px;
-}
-
-.containers {
-    display: flex;
-    height: auto;
-}
-
-.container1 {
-    width: 275px;
-    font-size: 25px;
-    background-color: #E9B824;
-    color: #DAD4B5;
-}
-
-.container1 h1 {
-    transform: rotate(-90deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-name: spacing;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes spacing {
-    from {
-        letter-spacing: -15px;
-    }
-    to {
-        letter-spacing: 1px;
-    }
-}
-
-.container2 {
-    width: 550px;
-    background-color: rgb(231 218 231);
-    padding: 35px 50px;
-    color: #000000;
-}
-
-.container3 {
-    width: 275px;
-    background-color: #D83F31;
-}
-
-#cont {
-    display: flex;
-    height: auto;
-    justify-content: center;
-} */
-
-
-
-
-  
+    
   .welcome-section {
     position: relative;
     background: url('./images/wedding.jpeg') no-repeat center;
@@ -685,4 +548,49 @@ body {
 /* Highlighted Text */
 .highlight {
     color: #e0dfdd; /* Golden color for #1 */
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* Dropdown styles */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f2e9e9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
 }
