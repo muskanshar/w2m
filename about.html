@@ -15,9 +15,9 @@
 <body>
     <header>
         
-    <nav>
+    <nav class="top">
         <div class="logo"><a href ="index.html">WEBMET</a></div>
-            <ul class="nav-links">
+            <ul class="top-nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -26,6 +26,8 @@
         </nav>
     </header>
     <nav class="navbar">
+        <div class="menu-icon">&#9776;</div>
+
         <div class="logo">
           <div class="menu-icon">&#9776;</div>
           <span>WEB<span class="highlight">MET</span></span>
@@ -72,6 +74,7 @@
                 </div>
             </li>
         </ul>
+        
         <div class="profile">
           <span class="role">ADVISOR</span>
           <div class="profile-details">
@@ -80,8 +83,20 @@
           </div>
         </div>
       </nav>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuIcon = document.querySelector(".menu-icon");
+            const navLinks = document.querySelector(".nav-links");
+
+            // Toggle the menu visibility when the menu icon is clicked
+            menuIcon.addEventListener("click", function() {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
+    </button>
       <section class="welcome-section">
-          <div="about-us">
+          <div"about-us">
               <div class="about-header">
                   <h1>#<span class="highlight">1</span> WEDDING WEBSITE</h1>
                   
